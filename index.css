@@ -1,0 +1,440 @@
+* { box-sizing: border-box; }
+
+.download-cv-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #374151;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv-btn:hover {
+  background-color: #1f2937;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {font-size: 1.2rem;}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+.profile-pic-header {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.header-text h1 {
+  font-size: 2.2rem;
+  margin: 0 0 0.2rem 0;
+}
+
+.header-text p {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #4b5563;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: #374151;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #9ca3af;
+}
+
+/* About section */
+#about {
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Projects */
+#projects {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+#projects h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;        
+  justify-content: center; 
+  gap: 1.5rem;             
+  margin-top: 2rem;
+}
+
+.project-single {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+  gap: 1.5rem;
+}
+
+.project-single:hover { transform: translateY(-5px); }
+
+.project-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;         
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* esto centra todo horizontalmente */
+  flex-grow: 1;
+}
+
+.project-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.project-info p {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #374151;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #9ca3af;
+  color: #111827;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 280px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card a {
+  text-decoration: none;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Overlay oscuro y centrado */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(55, 65, 81, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Mostrar cuando tenga .show */
+.modal.show {
+  display: flex;
+}
+
+/* Contenido del modal */
+.modal-content {
+  background: #f9fafb;        
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1f2937;
+}
+
+/* Header personalizado */
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+  color: #374151;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.modal-content h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #9ca3af;
+  margin: 0.5rem auto 1.5rem;
+  border-radius: 2px;
+}
+
+/* Botón de cierre mejorado */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 1.4rem;
+  color: #6b7280;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.close-btn:hover {
+  color: #374151;
+}
+
+/* Formulario en columnas */
+.modal-content form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.modal-content form label {
+  font-weight: 600;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  /* Eliminado el icono general */
+}
+
+/* Iconos específicos para cada label */
+.modal-content form label[for="email"]::before {
+  content: '✉️'; /* Sobre para email */
+  font-size: 1rem;
+  opacity: 0.6;
+}
+.modal-content form label[for="name"]::before {
+  content: '👤'; /* Persona para nombre */
+  font-size: 1rem;
+  opacity: 0.6;
+}
+.modal-content form label[for="message"]::before {
+  content: '💬'; /* Burbuja de mensaje para textarea */
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+  grid-column: span 2;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.modal-content form textarea {
+  min-height: 120px;
+}
+
+/* Focus states más suaves */
+.modal-content form input:focus,
+.modal-content form textarea:focus {
+  outline: none;
+  border-color: #9ca3af;
+  box-shadow: 0 0 4px rgba(156, 163, 175, 0.4);
+}
+
+/* Botón de envío destacado */
+.modal-content button {
+  grid-column: span 2;
+  background-color: #374151;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.modal-content button:hover {
+  background-color: #1f2937;
+}
+
+/* Mensaje de respuesta */
+.response-message {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #16a34a; /* verde suave para éxito */
+}
+.response-message.error {
+  color: #dc2626; /* rojo suave para error */
+}
+
+.timeline-card {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -32px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #374151;
+  border: 4px solid white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-date {
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.timeline-card p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.timeline-card ul {
+  list-style-type: none; /* quita los puntos */
+  padding-left: 0;
+  margin-top: 0.5rem;
+}
+
+.timeline-card ul li {
+  margin-bottom: 0.3rem;
+}
+
+/* Footer */
+footer {
+  background-color: #e5e7eb; /* fondo gris oscuro */
+  color: #000000; /* texto gris claro */
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.2);
+}
+
+.social-links {
+  margin: 1rem 0 1.5rem;
+}
+
+.social-links a {
+  margin: 0 0.7em;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #9ca3af; /* gris medio para iconos */
+  font-size: 1.5rem; /* tamaño iconos más grande */
+}
+
+
+.social-links a:hover {transform: scale(1.3);}
+
+footer p {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
