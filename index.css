@@ -61,7 +61,6 @@ header p {font-size: 1.2rem;}
   color: #4b5563;
 }
 
-/* Navigation */
 nav ul {
   display: flex;
   justify-content: center;
@@ -84,7 +83,6 @@ nav ul li a:hover {
   color: #9ca3af;
 }
 
-/* About section */
 #about {
   max-width: 700px;
   margin: 2rem auto;
@@ -100,7 +98,6 @@ nav ul li a:hover {
   margin-bottom: 1rem;
 }
 
-/* Projects */
 #projects {
   max-width: 900px;
   margin: 3rem auto;
@@ -147,7 +144,7 @@ nav ul li a:hover {
 .project-info {
   display: flex;
   flex-direction: column;
-  align-items: center;  /* esto centra todo horizontalmente */
+  align-items: center;  
   flex-grow: 1;
 }
 
@@ -210,7 +207,6 @@ nav ul li a:hover {
   margin-top: 0.5rem;
 }
 
-/* Overlay oscuro y centrado */
 .modal {
   display: none;
   position: fixed;
@@ -221,12 +217,10 @@ nav ul li a:hover {
   z-index: 9999;
 }
 
-/* Mostrar cuando tenga .show */
 .modal.show {
   display: flex;
 }
 
-/* Contenido del modal */
 .modal-content {
   background: #f9fafb;        
   border-radius: 12px;
@@ -239,7 +233,6 @@ nav ul li a:hover {
   color: #1f2937;
 }
 
-/* Header personalizado */
 .modal-content h2 {
   margin-top: 0;
   font-size: 1.75rem;
@@ -258,7 +251,6 @@ nav ul li a:hover {
   border-radius: 2px;
 }
 
-/* Botón de cierre mejorado */
 .close-btn {
   position: absolute;
   top: 12px;
@@ -274,7 +266,6 @@ nav ul li a:hover {
   color: #374151;
 }
 
-/* Formulario en columnas */
 .modal-content form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -286,22 +277,20 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  /* Eliminado el icono general */
 }
 
-/* Iconos específicos para cada label */
 .modal-content form label[for="email"]::before {
-  content: '✉️'; /* Sobre para email */
+  content: '✉️'; 
   font-size: 1rem;
   opacity: 0.6;
 }
 .modal-content form label[for="name"]::before {
-  content: '👤'; /* Persona para nombre */
+  content: '👤'; 
   font-size: 1rem;
   opacity: 0.6;
 }
 .modal-content form label[for="message"]::before {
-  content: '💬'; /* Burbuja de mensaje para textarea */
+  content: '💬'; 
   font-size: 1rem;
   opacity: 0.6;
 }
@@ -320,7 +309,6 @@ nav ul li a:hover {
   min-height: 120px;
 }
 
-/* Focus states más suaves */
 .modal-content form input:focus,
 .modal-content form textarea:focus {
   outline: none;
@@ -328,7 +316,6 @@ nav ul li a:hover {
   box-shadow: 0 0 4px rgba(156, 163, 175, 0.4);
 }
 
-/* Botón de envío destacado */
 .modal-content button {
   grid-column: span 2;
   background-color: #374151;
@@ -347,16 +334,15 @@ nav ul li a:hover {
   background-color: #1f2937;
 }
 
-/* Mensaje de respuesta */
 .response-message {
   grid-column: span 2;
   text-align: center;
   margin-top: 1rem;
   font-weight: 500;
-  color: #16a34a; /* verde suave para éxito */
+  color: #16a34a; 
 }
 .response-message.error {
-  color: #dc2626; /* rojo suave para error */
+  color: #dc2626; 
 }
 
 .timeline-card {
@@ -398,7 +384,7 @@ nav ul li a:hover {
 }
 
 .timeline-card ul {
-  list-style-type: none; /* quita los puntos */
+  list-style-type: none; 
   padding-left: 0;
   margin-top: 0.5rem;
 }
@@ -407,10 +393,9 @@ nav ul li a:hover {
   margin-bottom: 0.3rem;
 }
 
-/* Footer */
 footer {
-  background-color: #e5e7eb; /* fondo gris oscuro */
-  color: #000000; /* texto gris claro */
+  background-color: #e5e7eb; 
+  color: #000000; 
   text-align: center;
   padding: 2rem 1rem;
   font-size: 1rem;
@@ -426,10 +411,9 @@ footer {
   margin: 0 0.7em;
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
-  color: #9ca3af; /* gris medio para iconos */
-  font-size: 1.5rem; /* tamaño iconos más grande */
+  color: #9ca3af; 
+  font-size: 1.5rem; 
 }
-
 
 .social-links a:hover {transform: scale(1.3);}
 
@@ -437,4 +421,115 @@ footer p {
   margin: 0;
   font-weight: 500;
   letter-spacing: 0.05em;
+}
+
+ /*SKILLS  */
+
+#skills {
+  width: 100vw;
+  background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+  padding: 1rem 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 0 10px 30px -15px #d1d5db;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#skills h2 {
+  font-size: 3rem;
+  margin: 0 0 3rem 0;
+  color: #111827;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.skills-section > h3,
+.soft-skills h3,
+.languages-section h3 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #374151;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 3px solid #9ca3af;
+  padding-bottom: 0.4rem;
+  text-align: center;
+}
+
+.skills-subsection h4,
+.soft-skills h4 {
+  font-size: 1.6rem;
+  color: #4b5563;
+  margin-bottom: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  border-bottom: 1.7px solid #d1d5db;
+  padding-bottom: 0.6rem;
+  text-align: center;
+}
+
+.skills-subsection ul,
+.soft-skills ul,
+.languages-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skills-subsection ul li,
+.soft-skills ul li,
+.languages-list li {
+  font-size: 1.15rem;
+  color: #6b7280;
+  cursor: default;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  background: #f3f4f6;
+  box-shadow: 1px 1px 3px rgba(156, 163, 175, 0.3);
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 90px;
+  text-align: center;
+}
+
+.languages-list li {
+  min-width: 140px;
+  padding: 0.5rem 1rem;
+}
+
+.skills-subsection ul li:hover,
+.soft-skills ul li:hover,
+.languages-list li:hover {
+  color: #374151;
+  background: #e0e7ff;
+  box-shadow: 2px 2px 7px rgba(59, 130, 246, 0.4);
+}
+
+.languages-list a {
+  color: inherit;       
+  text-decoration: none; 
+}
+
+.languages-list a:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+  cursor: pointer;
 }
