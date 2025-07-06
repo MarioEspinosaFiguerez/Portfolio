@@ -61,17 +61,24 @@ header p {font-size: 1.2rem;}
   color: #4b5563;
 }
 
-nav ul {
+.nav-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #374151;
-  list-style: none;
-  padding: 1rem 0;
-  margin: 0;
-  gap: 2rem;
+  padding: 1rem 2rem;
+  position: relative;
 }
 
-nav ul li a {
+.nav-center {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-center li a {
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -79,9 +86,24 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-center li a:hover {
   color: #9ca3af;
 }
+
+.nav-btn {
+  position: absolute;
+  right: 3rem;
+  padding: 0.5rem 1rem;
+  background-color: #1f2937;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.nav-btn:hover { transform: scale(1.15); }
+
 
 #about {
   max-width: 700px;
@@ -188,6 +210,12 @@ nav ul li a:hover {
   transition: box-shadow 0.2s;
 }
 
+.project-card-content {
+  display: flex;
+  align-items: center; 
+  gap: 1rem;
+}
+
 .project-card:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
@@ -232,6 +260,8 @@ nav ul li a:hover {
   font-family: 'Segoe UI', sans-serif;
   color: #1f2937;
 }
+
+.modal-content form textarea { resize:none}
 
 .modal-content h2 {
   margin-top: 0;
@@ -422,8 +452,6 @@ footer p {
   font-weight: 500;
   letter-spacing: 0.05em;
 }
-
- /*SKILLS  */
 
 #skills {
   width: 100vw;

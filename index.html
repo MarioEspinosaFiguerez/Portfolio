@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home</title>
+  <title id="title">Home</title>
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
@@ -13,30 +13,44 @@
     <div class="header-text">
       <h1>Mario Espinosa Figuérez</h1>
       <div>
-        <h3>Junior Unity & Backend Developer</h3>
-        <p>Unity Scripting | C# | .NET | SQL Server | Game Dev | AR/VR Enthusiast</p>
+        <h3 id="profileRole"></h3>
+        <p id="profileStack"></p>
       </div>
-      <a href="docs/ES_CV_MarioEspinosaFiguerez.pdf" download class="download-cv-btn">Download CV as PDF (ES)</a>
-      <a href="docs/EN_CV_MarioEspinosaFiguerez.pdf" download class="download-cv-btn">Download CV as PDF (EN)</a>
+      <a download class="download-cv-btn" id="cvEsLink">Download CV as PDF (ES)</a>
+      <a download class="download-cv-btn" id="cvEnLink">Download CV as PDF (EN)</a>
     </div>
   </div>
   </header>
 
-  <nav>
-    <ul>
+  <nav class="nav-container">
+    <ul class="nav-center">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#" id="openContact">Contact</a></li>
+      <li><a href="#contact" id="openContact">Contact</a></li>
     </ul>
+
+    <button id="toggleProfile" class="nav-btn">EN</button>
   </nav>
 
-  <section id="about">
+  <section id="about"> 
     <h3>About me</h3>
-    <p>
-      I’m a passionate software developer with a solid foundation in <strong>backend development using C# and .NET</strong> and a growing specialization in Unity with a <strong>strong focus on C# scripting</strong> for video games and virtual/augmented reality.
-      I enjoy learning, solving real-world problems, and creating immersive experiences.
-      I’m actively seeking roles in Unity development or backend development with C# / .NET.<br/><br/>
-    </p>
+    <p id="aboutText"></p>
+
+    <div id="experienceSection" class="timeline-section">
+      <h3>Professional Experience</h3>
+      <div class="timeline-card">
+        <div class="timeline-date">Oct 2023 - June 2024</div>
+        <h4>Software Development Internship - NTT DATA</h4>
+        <p>Key Responsibilities</p>
+        <ul>
+          <li>Maintained and developed backend functionalities using .NET and C#</li>
+          <li>Maintained and updated frontend components in Angular</li>
+          <li>Performed database operations and optimized SQL queries in SQL Server</li>
+          <li>Created technical documentation and user guides for the project</li>
+          <li>Collaborated in Agile development teams</li>
+        </ul>
+      </div>
+    </div>
 
   <div id="timeline" style="flex: 1; min-width: 300px; position: relative; padding-left: 40px; border-left: 3px solid #374151;">
 
@@ -58,21 +72,7 @@
           <li>Core Skills: C#, .NET, Linq, Sql, SQL Server, Entity Framework</li>
         </ul>
     </div>
-  </div>
-
-    <h3>Professional Experience</h3>
-      <div class="timeline-card">
-      <div class="timeline-date">Oct 2023 - June 2024</div>
-      <h4>Software Development Internship - NTT DATA</h4>
-      <p>Key Responsibilities</p>
-        <ul>
-          <li>Maintained and developed backend functionalities using .NET and C#</li>
-          <li>Maintained and updated frontend components in Angular</li>
-          <li>Performed database operations and optimized SQL queries in SQL Server</li>
-          <li>Created technical documentation and user guides for the project</li>
-          <li>Collaborated in Agile development teams</li>
-        </ul>
-      </div>    
+  </div>  
   </section>
       
 <section id="skills">
@@ -83,29 +83,15 @@
 
     <div class="skills-subsection">
       <h4>Core</h4>
-      <ul>
-        <li>Unity – C# Scripting for 2D, 3D, VR, AR (Vuforia)</li>
-        <li>C#</li>
-        <li>.NET</li>
-        <li>Linq</li>
-        <li>Sql</li>
-        <li>SQL Server & Entity Framework</li>
-      </ul>
+      <ul id="coreSkills"></ul>
     </div>
 
-    <div class="skills-subsection">
+    <div class="skills-subsection" id="otherSkillsSection">
       <h4>Others</h4>
       <p class="skills-note"> Technologies I’ve studied or used in the past but are currently not part of my active stack. Willing to revisit them if needed for a project.</p>
       <br>
-      <ul>
-        <li>HTML, CSS, Javascript</li>
-        <li>Angular</li>
-        <li>NodeJS</li>
-        <li>Java</li>
-        <li>Kotlin</li>
-      </ul>
+      <ul id="otherSkills"> </ul>
     </div>
-
   </section>
 
   <section class="skills-section">
@@ -130,7 +116,7 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project-grid" id="projectGrid"></div>
+    <div class="project-grid"></div>
   </section>
 
   <!-- Modal -->
