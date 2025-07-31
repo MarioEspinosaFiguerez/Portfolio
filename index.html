@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Mario Espinosa</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+       <div class="nav-left">
+      <img src="images/icon-langs/spanish-icon.ico" alt="ES" id="lang-es" />
+      <img src="images/icon-langs/english-icon.ico" alt="EN" id="lang-en" />
+    </div>
+
+    <!-- Menú en el centro -->
+    <ul class="nav-center">
+      <li><a href="#about" id="About">About</a></li>
+      <li><a href="#projects" id="Projects">Projects</a></li>
+      <li><a download id="cv-link">Curriculum</a></li>
+      <li><a href="#contact" id="openContact" class="Contact">Contact</a></li>
+    </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Mario Espinosa Figuerez</h1>
+    <h3 id="job-title"></h3>
+    <p id="job-stack"></p>
+  </header>
+
+  <hr class="section-separator" />
+  
+  <section id="about">
+    <h3 id="aboutme-title">About me</h3>
+    <p id="aboutText"></p>
+    <div id="professional-experience">
+      <h3 id="experience-title"></h3>
+      <div class="timeline-card">
+        <div class="timeline-date" id="experience-date"></div>
+        <h4 id="experience-position"></h4>
+        <p id="key-responsabilities-title"></p>
+        <ul id="experience-responsibilities"></ul>
+      </div>
+    </div>
+
+    <div id="timeline" style="flex: 1; min-width: 300px; position: relative; padding-left: 40px; border-left: 3px solid #374151;">
+      <h3 id="mystudies-title">My Studies</h3>
+
+      <div class="timeline-card">
+        <div class="timeline-date">Oct 2024 - June 2025</div>
+        <h4 id="specialization-course-title"></h4>
+        <ul>
+          <li id="specialization-skills-gained">Core Skills: Unity 2D, 3D, VR, AR (with Vuforia)</li>
+        </ul>
+      </div>
+
+      <div class="timeline-card">
+        <div class="timeline-date">Sept 2021 - June 2024</div>
+        <h4 id="dam-course-title">Multiplatform Application Development + Internship at NTT DATA</h4>
+        <ul>
+          <li id="dam-skills-gained">Core Skills: C#, .NET, Linq, Sql, SQL Server, Entity Framework</li>
+        </ul>
+      </div>
+    </div>  
+  </section>
+
+  <section id="skills">
+    <h2 id="skills-main-title"></h2>
+
+    <section class="skills-section">
+      <h3 id="skills-subtitle"></h3>
+
+      <div class="skills-subsection">
+        <h4 id="core-title"></h4>
+        <ul id="coreSkills"></ul>
+      </div>
+
+      <div class="skills-subsection" id="otherSkillsSection">
+        <h4 id="others"></h4>
+        <p id="skills-note" class="skills-note"></p>
+        <ul id="otherSkills"></ul>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <h3 id="soft-skills-title"></h3>
+      <ul id="soft-skills" class="languages-list"></ul>
+    </section>
+
+    <div class="skills-section">
+      <h3 id="languages-title"></h3>
+      <ul id="languages" class="languages-list"></ul>
+    </div>
+    
+    <section id="projects">
+    <h2 id="projects-title-section"></h2>
+    <div class="project-grid"></div>
+    </section>
+  </section>
+
+  <!-- Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-btn" id="closeModal" aria-label="Close contact form">&times;</button>
+      <h2 id="modalTitle">Contact Me</h2>
+      <form id="contactForm" action="https://formspree.io/f/mrbkkkpn" method="post">
+        <label for="name" id="modal-name">Name</label>
+        <input id="name" type="text" name="name" required />
+        
+        <label for="email" id="modal-email">Email</label>
+        <input type="email" id="email" name="email" required />
+        
+        <label for="message" id="modal-message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit" id="modal-submit">Send</button>
+        <p id="responseMessage" class="response-message"></p>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-links">
+    <a href="https://www.linkedin.com/in/mario-espinosa-figuerez/" target="_blank" aria-label="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0A66C2" viewBox="0 0 24 24">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.025-3.039-1.852-3.039-1.852 0-2.135 1.445-2.135 2.939v5.669H9.354V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.6 0 4.268 2.368 4.268 5.451v6.29zM5.337 7.433a2.07 2.07 0 11.002-4.139 2.07 2.07 0 01-.002 4.139zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .77 0 1.722v20.555C0 23.228.792 24 1.771 24h20.451C23.2 24 24 23.228 24 22.278V1.722C24 .77 23.2 0 22.225 0z"/>
+      </svg>
+    </a>
+    <a href="https://github.com/MarioEspinosaFiguerez" target="_blank" aria-label="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#181717" viewBox="0 0 24 24">
+        <path d="M12 0C5.373 0 0 5.372 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577 0-.285-.011-1.04-.016-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.304.762-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.47-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.51 11.51 0 013.003-.403c1.018.005 2.045.138 3.003.403 2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.873.12 3.176.77.84 1.234 1.911 1.234 3.221 0 4.61-2.807 5.625-5.48 5.922.43.37.823 1.103.823 2.222 0 1.606-.015 2.896-.015 3.287 0 .319.192.694.8.576C20.565 21.796 24 17.303 24 12c0-6.628-5.373-12-12-12z"/>
+      </svg>
+    </a>
+    </div>
+
+    <p>© 2025 Mario Espinosa Figuerez - All rights reserved.</p>
+
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

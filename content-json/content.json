@@ -1,0 +1,64 @@
+{
+    "en": {
+        "aboutme": "I’m a passionate software developer with a solid foundation in backend development using C# and .NET. I enjoy solving complex problems and building efficient, scalable solutions.",
+        "cvlink": "docs/JuniorBackend_EN_MarioEspinosaFiguerez.pdf",
+        "jobTitle": "Junior Backend Developer",
+        "profesionalExperience": {
+            "title": "Professional Experience",
+            "date": "Oct 2023 - June 2024",
+            "title_experience": "Software Development Internship - NTT DATA",
+            "responsabilities": [
+            "Created technical documentation and user guides to support system usage and improve team understanding.",
+            "Developed features and resolved issues using Angular, enhancing the user interface and overall experience.",
+            "Implemented and debugged backend functionalities with .NET, contributing to system stability and scalability.",
+            "Managed and optimized SQL queries in SQL Server to ensure data integrity and efficient database operations.",
+            "Collaborated in Agile development team"
+            ]
+        },
+        "skills": "Skills",
+        "techSkills": "Tech Skills",
+        "coreSkills": "Core Skills", 
+        "othersSkills": "Others",
+        "softSkills": {
+            "title": "Soft Skills",
+            "softSkills": [ "Teamwork", "Communication", "Problem Solving", "Flexibility and Adaptability", "Responsability and Punctuality"]
+        },
+        "langs": {
+            "title": "Languages",
+            "list": [ "Spanish - Native", "<a href=\"https://drive.google.com/file/d/17k9v-VBG8gGfRx33kNuj21S1JLPG3LAk/view?usp=drive_link\" target=\"_blank rel=\"noopener noreferrer\">English - Intermediate (Mid - High B1)</a>"]
+        },
+        "activelylearning": " (Actively learning)",
+        "inDevelopment": "In active development"
+    },
+    "es": {
+        "aboutme": "Soy un desarrollador de software apasionado con una base sólida en desarrollo backend usando C# y .NET. Disfruto resolver problemas complejos y crear soluciones eficientes y escalables.",
+        "cvlink": "docs/JuniorBackend_ES_MarioEspinosaFiguerez.pdf",
+        "jobTitle": "Desarrollador Backend Junior",
+        "profesionalExperience": {
+            "title": "Experiencia",
+            "date": "Oct 2023 - Junio 2024",
+            "title_experience": "Estudiante en prácticas - NTT DATA",
+            "responsabilities" : [
+                "Elaboré documentación técnica y guías de usuario detalladas, facilitando la comprensión y uso del sistema por parte de usuarios y equipo técnico.",
+                "Desarrollé y solucioné incidencias en Angular, mejorando la interfaz y experiencia del usuario.",
+                "Implementé y corregí funcionalidades en .NET, contribuyendo a la estabilidad y escalabilidad del backend.",
+                "Gestioné y optimicé consultas SQL en SQL Server para asegurar la integridad y eficiencia en elmanejo de datos.",
+                "Colaboré en un equipo usando metodologías ágiles."
+            ]
+        },
+        "skills": "Habilidades",
+        "techSkills": "Habilidades Técnicas",
+        "coreSkills": "Habilidades Clave", 
+        "othersSkills": "Otros",
+        "softSkills": {
+            "title": "Habilidades Blandas",
+            "softSkills": [ "Trabajo en equipo", "Comunicación", "Resolución de problemas", "Flexibilidad y adaptación", "Responsabilidad y Puntualidad"]
+        },
+        "langs": {
+            "title": "Idiomas",
+            "list": [ "Español - Nativo", "<a href=\"https://drive.google.com/file/d/17k9v-VBG8gGfRx33kNuj21S1JLPG3LAk/view?usp=drive_link\" target=\"_blank\">Inglés - Intermedio (B1 Medio - alto)</a>"]
+        },
+        "activelylearning": " (Aprendiendo activamente)",
+        "inDevelopment": "En desarrollo activo"
+    }
+}
