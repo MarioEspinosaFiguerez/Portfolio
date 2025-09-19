@@ -13,15 +13,17 @@ let sharedContent = {};
         {
             "en": {
                 title: "To-Do List API",
-                description: `To-Do List API is a minimalistic RESTful API built with <strong>.NET and ASP.NET Core</strong>. This project was mainly developed as a hands-on practice to strengthen my skills in .NET Core and RESTful API development.`,
+                description: `To-Do List API is a minimalistic RESTful API built with <strong>.NET Core</strong>. This project was mainly developed as a hands-on practice to strengthen my skills in .NET Core and RESTful API development.`,
                 link: "https://github.com/MarioEspinosaFiguerez/ToDoListAPI",
-                inDevelopment: true
+                inDevelopment: true,
+                completed: false
             },
             "es": {
                 title: "To-Do List API",
-                description: `To-Do List API es una API RESTful minimalista construida con <strong>.NET y ASP.NET Core</strong>. Este proyecto fue desarrollado principalmente como práctica para fortalecer mis habilidades en .NET Core y el desarrollo de APIs RESTful.`,
+                description: `To-Do List API es una API RESTful minimalista construida con <strong>.NET Core</strong>. Este proyecto fue desarrollado principalmente como práctica para fortalecer mis habilidades en .NET Core y el desarrollo de APIs RESTful.`,
                 link: "https://github.com/MarioEspinosaFiguerez/ToDoListAPI",
-                inDevelopment: true
+                inDevelopment: true,
+                completed: false
             }           
         }
     ];
@@ -153,9 +155,12 @@ function updateContent(lang) {
     card.className = "card project-single";
 
     const isInDevelopment = project[currentLanguage].inDevelopment;
+    const isCompleted = project[currentLanguage].completed;
+
     let devBadge = "";
 
-    if (isInDevelopment) devBadge = `<span class="dev-badge">${translations[currentLanguage].inDevelopment}</span>`
+    if (isInDevelopment) devBadge = `<span class="dev-badge-in-development">${translations[currentLanguage].inDevelopment}</span>`
+    else if (isCompleted) devBadge = `<span class="dev-badge-completed">${translations[currentLanguage].completed}</span>`
 
     if (currentLanguage === 'en') {
         card.innerHTML = `

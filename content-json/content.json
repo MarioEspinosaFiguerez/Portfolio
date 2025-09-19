@@ -25,10 +25,11 @@
         },
         "langs": {
             "title": "Languages",
-            "list": [ "Spanish - Native", "<a href=\"https://drive.google.com/file/d/17k9v-VBG8gGfRx33kNuj21S1JLPG3LAk/view?usp=drive_link\" target=\"_blank rel=\"noopener noreferrer\">English - Intermediate (Mid - High B1)</a>"]
+            "list": [ "Spanish - Native", "<a href=\"https://drive.google.com/file/d/17k9v-VBG8gGfRx33kNuj21S1JLPG3LAk/view?usp=drive_link\" target=\"_blank rel=\"noopener noreferrer\">English - Intermediate (B2)</a>"]
         },
         "activelylearning": " (Actively learning)",
-        "inDevelopment": "In active development"
+        "inDevelopment": "In active development",
+        "completed": "Completed"
     },
     "es": {
         "aboutme": "Soy un desarrollador de software apasionado con una base sólida en desarrollo backend usando C# y .NET. Disfruto resolver problemas complejos y crear soluciones eficientes y escalables.",
@@ -56,9 +57,10 @@
         },
         "langs": {
             "title": "Idiomas",
-            "list": [ "Español - Nativo", "<a href=\"https://drive.google.com/file/d/17k9v-VBG8gGfRx33kNuj21S1JLPG3LAk/view?usp=drive_link\" target=\"_blank\">Inglés - Intermedio (B1 Medio - alto)</a>"]
+            "list": [ "Español - Nativo", "<a href=\"https://drive.google.com/file/d/17k9v-VBG8gGfRx33kNuj21S1JLPG3LAk/view?usp=drive_link\" target=\"_blank\">Inglés - Intermedio (B2)</a>"]
         },
         "activelylearning": " (Aprendiendo activamente)",
-        "inDevelopment": "En desarrollo activo"
+        "inDevelopment": "En desarrollo activo",
+        "completed": "Finalizado"
     }
 }

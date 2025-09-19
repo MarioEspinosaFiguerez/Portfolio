@@ -302,8 +302,19 @@
         }
 
         /* Projects */
-        .dev-badge {
+        .dev-badge-in-development {
             background-color: #e67e22;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .dev-badge-completed {
+            background-color: #39e622;
             color: white;
             font-size: 0.75rem;
             font-weight: 600;
