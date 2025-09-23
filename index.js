@@ -15,15 +15,15 @@ let sharedContent = {};
                 title: "To-Do List API",
                 description: `To-Do List API is a minimalistic RESTful API built with <strong>.NET Core</strong>. This project was mainly developed as a hands-on practice to strengthen my skills in .NET Core and RESTful API development.`,
                 link: "https://github.com/MarioEspinosaFiguerez/ToDoListAPI",
-                inDevelopment: true,
-                completed: false
+                inDevelopment: false,
+                completed: true
             },
             "es": {
                 title: "To-Do List API",
                 description: `To-Do List API es una API RESTful minimalista construida con <strong>.NET Core</strong>. Este proyecto fue desarrollado principalmente como práctica para fortalecer mis habilidades en .NET Core y el desarrollo de APIs RESTful.`,
                 link: "https://github.com/MarioEspinosaFiguerez/ToDoListAPI",
-                inDevelopment: true,
-                completed: false
+                inDevelopment: false,
+                completed: true
             }           
         }
     ];
