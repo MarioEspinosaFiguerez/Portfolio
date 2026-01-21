@@ -1,0 +1,8 @@
+{
+    "core": [ "C#", ".NET", "Linq", "SQL", "SQL Server", "Entity Framework", "RESTful APIs" ],
+    "others": [ "HTML", "CSS", "JavaScript", "Angular", "NodeJS", "Java", "Kotlin"],
+    "soft": {
+        "es": [ "Trabajo en equipo", "Comunicación", "Resolución de problemas", "Flexibilidad y Adaptación", "Responsabilidad y Puntualidad" ],
+        "en": [ "Teamwork", "Communication", "Problem Solving", "Flexibility and Adaptability", "Responsability and Punctuality" ]
+    }
+}
