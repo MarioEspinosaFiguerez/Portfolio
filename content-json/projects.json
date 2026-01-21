@@ -19,7 +19,7 @@
   "kombryx": {
     "es": {
       "title": "Kombryx",
-      "description": "Kombryx es una aplicación web de torneos de videojuegos construida con <strong> .NET 10 </strong>. Este proyecto fue desarrollado principalmente como actualización de conocimientos a .NET 10 además de un proyecto pensado para uso personal.",
+      "description": "Kombryx es una aplicación web de gestión de clanes o gremios construida con <strong> .NET 10 </strong>. Este proyecto fue desarrollado principalmente como actualización de conocimientos a .NET 10 además de un proyecto pensado para uso personal.",
       "technologiesUsed": [],
       "github": "",
       "status": "inDevelopment"
@@ -27,7 +27,7 @@
     },
     "en": {
       "title": "Kombryx",
-      "description": "Kombryx is a web application for video game tournaments built with <strong>.NET 10</strong>. This project was developed mainly as a knowledge update to .NET 10 as well as a project intended for personal use.",
+      "description": "Kombryx is a web application for managing clans or guilds built with <strong>.NET 10</strong>. This project was developed mainly as a knowledge update to .NET 10 as well as a project intended for personal use.",
       "technologiesUsed": [],
       "github": "",
       "status": "inDevelopment"
