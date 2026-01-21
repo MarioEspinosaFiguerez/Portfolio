@@ -1,0 +1,111 @@
+{
+    "es": {
+        "nav": {
+            "about": "Acerca de mi",
+            "projects": "Proyectos",
+            "cv": "Curriculum",
+            "contact": "Contáctame"
+        },
+        "modal": {
+            "title": "Contáctame",
+            "name": "Nombre",
+            "email": "Correo",
+            "message": "Mensaje",
+            "submit": "Enviar",
+            "successMessage": "¡Gracias! Tu mensaje ha sido enviado.",
+            "errorMessage": "Error al enviar el mensaje. Inténtalo de nuevo.",
+            "placeholderName": "Tu Nombre",
+            "placeholderEmail": "ejemplo@ejemplo.com",
+            "placeholderMsg": "Tu Mensaje"
+        },
+        "about": {
+            "title": "Sobre mí"
+        },
+        "experience": {
+            "keyResponsibilities": "Responsabilidades Clave"
+        },
+        "studies": {
+            "title": "Mis Estudios",
+            "specialization": {
+                "title": "Curso de Especialización en Desarrollo de Videojuegos y Realidad Virtual",
+                "skills": "Habilidades Técnicas: Unity 2D, 3D, VR, AR (Vuforia)"
+            },
+            "dam": {
+                "title": "Desarrollo de Aplicaciones Multiplataforma + Prácticas en NTT DATA",
+                "skills": "Habilidades Técnicas: C#, .NET, Linq, Sql, SQL Server, Entity Framework"
+            }
+        },
+        "skills": {
+            "title": "Habilidades",
+            "core": "Habilidades Técnicas",
+            "others": "Otros Lenguajes y Herramientas",
+            "soft": "Habilidades Blandas",
+            "languages": "Idiomas",
+            "note": "Tecnologías que he estudiado o usado en el pasado, pero actualmente no forman parte de mi stack activo. Estoy dispuesto a retomarlas si el proyecto lo requiere."
+        },
+        "projects": {
+            "title": "Proyectos",
+            "viewProject": "Ver Proyecto",
+            "inDevelopment": "En desarrollo",
+            "completed": "Finalizado",
+            "technologiesUsedTitle": "Tecnologías utilizadas en",
+            "showTechnologies": "Mostrar tecnologías utilizadas",
+            "hideTechnologies": "Ocultar tecnologías utilizadas"
+        }
+    },
+    "en": {
+        "nav": {
+            "about": "About me",
+            "projects": "Projects",
+            "cv": "Curriculum",
+            "contact": "Contact"
+        },
+        "modal": {
+            "title": "Contact Me",
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "submit": "Send",
+            "successMessage": "Thank you! Your message has been sent.",
+            "errorMessage": "Failed to send message. Please try again.",
+            "placeholderName": "Your Name",
+            "placeholderEmail": "you@example.com",
+            "placeholderMsg": "Your Message"
+        },
+        "about": {
+            "title": "About me"
+        },
+        "experience": {
+            "keyResponsibilities": "Key Responsibilities"
+        },
+        "studies": {
+            "title": "My Studies",
+            "specialization": {
+                "title": "Specialization in Video Games and Virtual Reality",
+                "skills": "Core Skills: Unity 2D, 3D, VR, AR (Vuforia)"
+            },
+            "dam": {
+                "title": "Multiplatform Application Development + Internship at NTT DATA",
+                "skills": "Core Skills: C#, .NET, Linq, Sql, SQL Server, Entity Framework"
+            }
+        },
+        "skills": {
+            "title": "Skills",
+            "core": "Technical Skills",
+            "others": "Other Languages & Tools",
+            "soft": "Soft Skills",
+            "languages": "Languages",
+            "note": "Technologies I’ve studied or used in the past but are currently not part of my active stack. Willing to revisit them if needed for a project."
+        },
+        "projects": {
+            "title": "Projects",
+            "viewProject": "View Project",
+            "inDevelopment": "In development",
+            "completed": "Completed",
+            "technologiesUsedTitle": "Technologies used in",
+            "showTechnologies": "Show used technologies",
+            "hideTechnologies": "Hide used technologies"
+
+        }
+    }
+}
