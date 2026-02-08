@@ -143,6 +143,7 @@
                   <h3 class="card-title">
                     {{ project.title }}                    
                     <span v-if="project.status === 'completed'" class="badge bg-success ms-2">{{ i18n[currentLanguage].projects.completed }}</span>
+                    <span v-if="project.status === 'earlyStage'" class="badge bg-info ms-2">{{ i18n[currentLanguage].projects.earlyStage }}</span> 
                     <span v-else-if="project.status === 'inDevelopment'" class="badge bg-warning text-dark ms-2">{{ i18n[currentLanguage].projects.inDevelopment }}</span>
                   </h3>
                   <p class="card-text" v-html="project.description"></p>
