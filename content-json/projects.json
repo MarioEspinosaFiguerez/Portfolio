@@ -22,7 +22,7 @@
       "description": "Kombryx es un backend de Matchmaking construido con <strong> .NET 10 </strong>. Este proyecto fue desarrollado principalmente como actualización de conocimientos a .NET 10 además de un proyecto pensado para uso personal.",
       "technologiesUsed": [],
       "github": "",
-      "status": "inDevelopment"
+      "status": "earlyStage"
 
     },
     "en": {
@@ -30,7 +30,7 @@
       "description": "Kombryx is a matchmaking backend built with <strong>.NET 10</strong>. This project was developed mainly as a knowledge upgrade to .NET 10, in addition to being a project intended for personal use.",
       "technologiesUsed": [],
       "github": "",
-      "status": "inDevelopment"
+      "status": "earlyStage"
     }
   }
 }

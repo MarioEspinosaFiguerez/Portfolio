@@ -46,6 +46,7 @@
         "projects": {
             "title": "Proyectos",
             "viewProject": "Ver Proyecto",
+            "earlyStage": "Fase inicial",
             "inDevelopment": "En desarrollo",
             "completed": "Finalizado",
             "technologiesUsedTitle": "Tecnologías utilizadas en",
@@ -100,6 +101,7 @@
         "projects": {
             "title": "Projects",
             "viewProject": "View Project",
+            "earlyStage": "Early Stage",
             "inDevelopment": "In development",
             "completed": "Completed",
             "technologiesUsedTitle": "Technologies used in",
