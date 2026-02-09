@@ -2,14 +2,14 @@
   "todoListAPI": {
     "es": {
       "title": "To-Do List API",
-      "description": "To-Do List API es una API RESTful minimalista construida con <strong>.NET Core</strong>. Este proyecto fue desarrollado principalmente como práctica para fortalecer mis habilidades en .NET Core y el desarrollo de APIs RESTful.",
+      "description": "To-Do List API es una API RESTful minimalista construida con <strong>.NET 8</strong>. Este proyecto fue desarrollado principalmente como práctica para fortalecer mis habilidades en .NET Core y el desarrollo de APIs RESTful.",
       "technologiesUsed": [ ".NET 8 con Minimal API", "Entity Framework Core", "Swagger", "SQL Server", "Postman", "Arquitectura Limpia" ],
       "github": "https://github.com/MarioEspinosaFiguerez/ToDoListAPI",
       "status": "completed"
     },
     "en": {
       "title": "To-Do List API",
-      "description": "To-Do List API is a minimalistic RESTful API built with <strong>.NET Core</strong>. This project was mainly developed as a hands-on practice to strengthen my skills in .NET Core and RESTful API development.",
+      "description": "To-Do List API is a minimalistic RESTful API built with <strong>.NET 8</strong>. This project was mainly developed as a hands-on practice to strengthen my skills in .NET Core and RESTful API development.",
       "technologiesUsed": [ ".NET 8 with Minimal API", "Entity Framework Core", "Swagger", "SQL Server", "Postman", "Clean Architecture" ],
       "github": "https://github.com/MarioEspinosaFiguerez/ToDoListAPI",
       "status": "completed"
@@ -20,7 +20,7 @@
     "es": {
       "title": "Kombryx",
       "description": "Kombryx es un backend de Matchmaking construido con <strong> .NET 10 </strong>. Este proyecto fue desarrollado principalmente como actualización de conocimientos a .NET 10 además de un proyecto pensado para uso personal.",
-      "technologiesUsed": [],
+      "technologiesUsed": [ ],
       "github": "",
       "status": "earlyStage"
 
@@ -28,7 +28,7 @@
     "en": {
       "title": "Kombryx",
       "description": "Kombryx is a matchmaking backend built with <strong>.NET 10</strong>. This project was developed mainly as a knowledge upgrade to .NET 10, in addition to being a project intended for personal use.",
-      "technologiesUsed": [],
+      "technologiesUsed": [ ],
       "github": "",
       "status": "earlyStage"
     }
